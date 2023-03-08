@@ -1,42 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/bg-image.jpg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-    <title>Temperature Hot</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>login page</title>
+  </head>
+  <body>
+    <!-- here is input start -->
+    <section
+      class="sm:h-screen grid items-center md:flex justify-center gap-4 h-screen items-center"
+    >
+      <input
+        id="input1"
+        type="text"
+        placeholder="Type here"
+        class="input input-bordered input-warning w-full max-w-xs"
+      />
+      <input
+        id="input2"
+        type="text"
+        placeholder="Type here"
+        class="input input-bordered input-info w-full max-w-xs"
+      />
+      <div>
+        <button
+          id="btn"
+          class="py-5 px-7 rounded-lg bg-orange-400 text-white font-bold"
+        >
+          login
+        </button>
+      </div>
+    </section>
+    <!-- here is input ends -->
+    <section></section>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        body {
-            background: url(images/bg-image.jpg) no-repeat;
-            background-size: cover;
-            height: 100vh;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- <h1 style="font-size: 40px ; color: white;" >project 1 is complite</h1> -->
-    <div class="container">
-        <form class="col-md-6 m-auto py-5">
-            <div class="input-group mb-3">
-                <input id="input" type="text" class="form-control" placeholder="Enter a location for Weather ...">
-                <div  class="input-group-append">
-                    <button id="btn" type="button" class="btn btn-danger">Search</button>
-                </div>
-            </div>
-        </form>
-        <div class="weather-status text-white text-center">
-            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-            <h1 id="city">Dhaka</h1>
-            <h3><span id="temp">38.06</span>&deg;C</h3>
-            <h1 class="lead">Clouds</h1>
-        </div>
-    </div>
-<script src="js/script.js"></script>
-</body>
-
+    <!-- here is scripts starts  -->
+    <script src="js/login.js"></script>
+    <!-- here is scripts ends -->
+  </body>
 </html>
